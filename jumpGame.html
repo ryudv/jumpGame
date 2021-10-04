@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JUMP GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e133d6c60e.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <h2>Jump! avoid of the poop! <i class="fas fa-poo"></i></h2>
+    <p>무지개 똥으로부터 고양이를 대피시키세요!</p>
+
+    
+    <!-- 게임이 진행되는 메인화면 -->
+    <div id="mainGame">
+        <!-- 점수판 -->
+        <div id ="count">
+            <span>JUMP SCORE : </span> 
+            <span id="score"></span>
+        </div>
+        <!-- 고양이 캐릭터 -->
+        <div id="cat"><i class="fas fa-cat"></i></div>
+        <!-- 장애물 -->
+        <div id="poop"><i class="fas fa-poo"></i></div>
+    </div>
+
+    <!-- 시작 버튼 -->
+    <button id="startBtn" onclick="start()"> START </button>
+    <!-- 점프 버튼 -->
+    <button id="jumpBtn" onclick="btnClick()"> JUMP </button>
+    <!-- 정지 버튼 -->
+    <button id="stopBtn" onclick="stop()"> STOP </button>
+</body>
+</html>
