@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin:0;
+}
+body {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* 메인 게임화면 */
+#mainGame {
+    margin: 10px auto;
+    width: 600px;
+    height: 300px;
+    border-top: 4px solid red;
+    border-right: 4px solid orange;
+    border-bottom: 4px solid green;
+    border-left: 4px solid blue;
+    overflow: hidden;
+    background: url("back.png") no-repeat;
+    background-size: 600px 300px;
+    position: relative
+}
+
+/* 점수판 */
+#count {
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    margin: 5px 0 0 10px;
+    font-weight: bold;
+}
+
+/* 고양이 캐릭터 크기 및 위치설정 */
+#cat {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+}
+#cat i {
+    font-size: 80px;
+    color: white;
+}
+.catAnimate {
+    animation: jump-animation .5s linear;
+}    
+
+/* 장애물 크기 및 위치, 이동설정 */
+#poop {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+#poop i {
+    font-size: 50px;
+    animation: color-animation 2s linear infinite;
+}
+.poopAnimate {
+    animation: poop-animation 2s infinite linear;
+}
+
+/* 시작 버튼 설정 */
+#startBtn {
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+#startBtn:hover {
+    background-color: salmon;
+}
+
+/* 점프 버튼 설정 */
+#jumpBtn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+#jumpBtn:hover {
+    background-color: plum;
+}
+
+/* 정지 버튼 설정 */
+#stopBtn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+#stopBtn:hover {
+    background-color: turquoise;
+}
+
+/* 고양이 점프 애니메이션 */
+@keyframes jump-animation {
+    0% {top: 200px;} 
+    30% {top: 150px;}
+    70% {top: 150px;}
+    100% {top: 200px;}
+}
+
+/* 똥 애니메이션 */
+@keyframes poop-animation {
+    0% {left: 600px;}
+    100% {left: -60px;}
+}
+
+/* 똥 색상 변경 */
+@keyframes color-animation {
+    0% {color: red;} 
+    30% {color: yellow;}
+    70% {color: green;}
+    100% {color: blue;}
+}
