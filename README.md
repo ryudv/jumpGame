@@ -1,2 +1,2 @@
 # jumpGame
-국비 수업 Mini Game 만들기
+국비학원 Mini Game 만들기
