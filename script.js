@@ -1,6 +1,7 @@
 // 점프 카운트 점수
 let count = 0;
 
+
 // 게임 시작
 function start() {
     let start = document.getElementById('startBtn');
